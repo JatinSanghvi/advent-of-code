@@ -1,4 +1,9 @@
-with open("input.txt") as file:
-    list = [int(line) for line in file.readlines()]
+def solve(path):
+    with open(path) as file:
+        depths = [int(line) for line in file.readlines()]
 
-print(sum(list[index] > list[index - 3] for index in range(3, len(list))))
+    print(sum(depths[index] > depths[index - 3] for index in range(3, len(depths))))
+
+
+solve("input-test.txt")
+solve("input.txt")
