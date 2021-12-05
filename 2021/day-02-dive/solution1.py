@@ -4,7 +4,7 @@ def solve(path):
 
     horz = sum(int(pos[1]) for pos in filter(lambda pos: pos[0] == "forward", positions))
     vert = sum(int(pos[1]) for pos in filter(lambda pos: pos[0] == "down", positions)) - \
-           sum(int(pos[1]) for pos in filter(lambda pos: pos[0] == "up", positions))
+        sum(int(pos[1]) for pos in filter(lambda pos: pos[0] == "up", positions))
 
     print(horz * vert)
 

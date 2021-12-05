@@ -5,7 +5,7 @@ def solve(path):
     aim = 0
     horz = 0
     depth = 0
-    
+
     for pos in positions:
         x = int(pos[1])
         if (pos[0] == "down"): aim += x
