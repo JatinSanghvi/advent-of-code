@@ -18,5 +18,6 @@ def solve(path):
 
     print(sum(fishes))
 
+
 solve("input-test.txt")
 solve("input.txt")
