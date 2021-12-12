@@ -3,7 +3,7 @@ def solve(path):
         lines = file.readlines()
 
     # Add matrix border to simplify code.
-    energies = [[int(char) for char in "0" + line.rstrip() + "0"] for line in ["0000000000"] + lines + ["0000000000"]]
+    energies = [[int(char) for char in line.rstrip() + "0"] for line in lines + ["0000000000"]]
 
     flashes = 0
 
@@ -12,8 +12,8 @@ def solve(path):
 
         while True:
             new_flashes = 0
-            for row in range(1, 11):
-                for col in range(1, 11):
+            for row in range(10):
+                for col in range(10):
                     if (energies[row][col] >= 10):
                         new_flashes += 1
                         energies[row][col] = 0
