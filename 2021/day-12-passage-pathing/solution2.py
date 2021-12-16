@@ -12,8 +12,6 @@ class Graph(object):
             self._graph[node2].add(node1)
 
     def count_paths(self, node="start", path=[], visited_twice=False):
-        """ Find any path between node1 and node2 (may not be shortest) """
-
         if node == "end": return 1
         if node.islower(): path = path + [node]
 
