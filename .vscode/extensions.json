@@ -1,7 +1,5 @@
 {
     "recommendations": [
-        "ms-python.python",
-        "julialang.language-julia",
-        "yzhang.markdown-all-in-one"
+        "ms-python.python"
     ]
 }
