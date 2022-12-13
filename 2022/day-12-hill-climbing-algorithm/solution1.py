@@ -1,4 +1,4 @@
-from typing import List, Tuple, TypeVar
+from typing import List, Tuple
 
 
 def solve(path):
