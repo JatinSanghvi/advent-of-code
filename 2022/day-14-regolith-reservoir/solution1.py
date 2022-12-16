@@ -22,7 +22,7 @@ def solve(path):
 
     grid = [(max_x - min_x + 1) * ['.'] for _ in range(max_y + 1)]
 
-    # Fill grid with rocks.
+    # Fill the grid with rocks.
     for rock in rocks:
         x, y = rock[0]
         grid[y][x] = '#'
@@ -40,6 +40,7 @@ def solve(path):
     num_sand = 0
     x, y = sand_start
 
+    # Drop a sand unit. Each iteration represents a clock cycle.
     while y < max_y:
         if grid[y + 1][x] == '.':
             y += 1
@@ -50,6 +51,7 @@ def solve(path):
             y += 1
             x += 1
         else:
+            # Settle the sand unit, and create a new one.
             grid[y][x] = 'o'
             num_sand += 1
             x, y = sand_start
