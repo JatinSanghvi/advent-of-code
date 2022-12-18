@@ -47,7 +47,7 @@ def solve(path):
 
 def main():
     solve('input-test.txt')  # 3068
-    solve('input.txt')  #
+    solve('input.txt')  # 3181
 
 
 if __name__ == '__main__':
