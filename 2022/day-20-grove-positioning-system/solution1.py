@@ -8,28 +8,28 @@ def solve(path):
     prev_indices = [(index - 1) % length for index in range(length)]
 
     for (index, number) in enumerate(numbers):
-        moves = number % (length - 1)
-        if moves == 0:
-            continue
 
-        next_index = index
-        for _ in range(moves):
-            next_index = next_indices[next_index]
-
-        new_prev_index = next_index
-        new_next_index = next_indices[next_index]
-
+        # Remove number.
         old_prev_index = prev_indices[index]
         old_next_index = next_indices[index]
 
+        next_indices[old_prev_index] = old_next_index
+        prev_indices[old_next_index] = old_prev_index
+
+        # Find next location.
+        moves = number % (length - 1)
+        new_prev_index = old_prev_index
+        for _ in range(moves):
+            new_prev_index = next_indices[new_prev_index]
+
+        new_next_index = next_indices[new_prev_index]
+
+        # Insert number.
         next_indices[new_prev_index] = index
         prev_indices[new_next_index] = index
 
         next_indices[index] = new_next_index
         prev_indices[index] = new_prev_index
-
-        next_indices[old_prev_index] = old_next_index
-        prev_indices[old_next_index] = old_prev_index
 
     sum = 0
 
