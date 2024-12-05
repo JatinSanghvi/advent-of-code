@@ -1,0 +1,10 @@
+{
+    "pylint.args": [
+        "--max-line-length=160",
+        "--module-rgx=^\\d{2}-\\d{2}-\\d{2}-(\\w+-)*\\w+$",
+        "--disable=C0103"
+    ],
+    "black-formatter.args": [
+        "--line-length=160"
+    ]
+}
