@@ -5,10 +5,12 @@ def solve(path: str) -> None:
     safe_count = 0
 
     for line in lines:
+        # Calculate differences between consecutive levels.
         levels = list(map(int, line.split()))
         diffs = [levels[i] - levels[i + 1] for i in range(len(levels) - 1)]
         max_diff, min_diff = max(diffs), min(diffs)
 
+        # Check if differences are within bounds.
         if (min_diff >= -3 and max_diff <= -1) or (min_diff >= 1 and max_diff <= 3):
             safe_count += 1
 

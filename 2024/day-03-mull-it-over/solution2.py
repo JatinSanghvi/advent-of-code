@@ -5,6 +5,7 @@ def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         text = file.read()
 
+    # Find all occurences of `do()`, `don't` and `mul(a,b)`.
     regex = re.compile(r"do\(\)|don't\(\)|mul\((\d{1,3}),(\d{1,3})\)")
 
     result = 0
@@ -12,6 +13,7 @@ def solve(path: str) -> None:
 
     for exp in regex.finditer(text):
         token = exp.group(0)
+
         if token == "do()":
             do = True
         elif token == "don't()":

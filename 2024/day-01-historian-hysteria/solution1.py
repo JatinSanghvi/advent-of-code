@@ -5,6 +5,7 @@ def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         lines = [line.rstrip("\n") for line in file.readlines()]
 
+    # Compose left and right lists.
     left_list: List[int] = []
     right_list: List[int] = []
 
@@ -16,6 +17,7 @@ def solve(path: str) -> None:
     left_list.sort()
     right_list.sort()
 
+    # Find distance between list elements in sorted list.
     total_distance = sum(abs(left - right) for left, right in zip(left_list, right_list))
     print(total_distance)
 

@@ -6,8 +6,8 @@ def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         lines = [line.rstrip("\n") for line in file.readlines()]
 
-    left_list: List[int] = []
-    right_freq: Dict[int, int] = defaultdict(int)
+    left_list: List[int] = []  # Left numbers.
+    right_freq: Dict[int, int] = defaultdict(int)  # Right number frequencies.
 
     for line in lines:
         left, right = map(int, line.split("   "))

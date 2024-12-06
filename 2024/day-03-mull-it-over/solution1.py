@@ -5,6 +5,7 @@ def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         text = file.read()
 
+    # Find all occurences of expression `mul(a,b)`.
     regex = re.compile(r"mul\((\d{1,3}),(\d{1,3})\)")
 
     result = 0
