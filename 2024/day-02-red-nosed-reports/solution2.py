@@ -1,4 +1,4 @@
-def solve(path):
+def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         lines = [line.rstrip("\n") for line in file.readlines()]
 

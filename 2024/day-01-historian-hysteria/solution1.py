@@ -1,9 +1,12 @@
-def solve(path):
+from typing import List
+
+
+def solve(path: str) -> None:
     with open(path, encoding="utf-8") as file:
         lines = [line.rstrip("\n") for line in file.readlines()]
 
-    left_list = []
-    right_list = []
+    left_list: List[int] = []
+    right_list: List[int] = []
 
     for line in lines:
         left, right = map(int, line.split("   "))
