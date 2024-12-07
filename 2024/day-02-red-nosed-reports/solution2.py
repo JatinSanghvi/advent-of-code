@@ -23,10 +23,5 @@ def solve(path: str) -> None:
     print(safe_count)
 
 
-def main():
-    solve("input-test.txt")  # 4
-    solve("input.txt")  # 296
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test.txt")  # 4
+solve("input.txt")  # 296

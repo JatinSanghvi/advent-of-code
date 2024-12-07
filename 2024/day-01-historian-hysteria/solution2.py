@@ -18,10 +18,5 @@ def solve(path: str) -> None:
     print(similarity_score)
 
 
-def main():
-    solve("input-test.txt")  # 31
-    solve("input.txt")  # 26859182
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test.txt")  # 31
+solve("input.txt")  # 26859182

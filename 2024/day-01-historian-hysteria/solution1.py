@@ -22,10 +22,5 @@ def solve(path: str) -> None:
     print(total_distance)
 
 
-def main():
-    solve("input-test.txt")  # 11
-    solve("input.txt")  # 1320851
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test.txt")  # 11
+solve("input.txt")  # 1320851

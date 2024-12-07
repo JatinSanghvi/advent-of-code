@@ -15,10 +15,5 @@ def solve(path: str) -> None:
     print(result)
 
 
-def main():
-    solve("input-test-1.txt")  # 161
-    solve("input.txt")  # 179571322
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test-1.txt")  # 161
+solve("input.txt")  # 179571322

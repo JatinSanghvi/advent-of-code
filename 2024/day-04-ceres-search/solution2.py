@@ -17,10 +17,5 @@ def solve(path: str) -> None:
     print(occurences)
 
 
-def main():
-    solve("input-test.txt")  # 9
-    solve("input.txt")  # 2034
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test.txt")  # 9
+solve("input.txt")  # 2034

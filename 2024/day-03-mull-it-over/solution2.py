@@ -24,10 +24,5 @@ def solve(path: str) -> None:
     print(result)
 
 
-def main():
-    solve("input-test-2.txt")  # 48
-    solve("input.txt")  # 103811193
-
-
-if __name__ == "__main__":
-    main()
+solve("input-test-2.txt")  # 48
+solve("input.txt")  # 103811193
