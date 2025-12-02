@@ -1,5 +1,5 @@
---- Part Two ---
-----------------
+-- Part Two --
+--------------
 
 You're sure that's the right password, but the door won't open. You knock, but nobody answers. You build a snowman while you think.
 

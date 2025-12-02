@@ -1,5 +1,5 @@
---- Day 1: Secret Entrance ---
-------------------------------
+-- Day 1: Secret Entrance --
+----------------------------
 
 The Elves have good news and bad news.
 
